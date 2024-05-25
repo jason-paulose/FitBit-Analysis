@@ -106,9 +106,6 @@ UPDATE ActivityStaging
 SET CleanDate = CONVERT(varchar(10), Date,1)
 
 ALTER TABLE ActivityStaging
-ALTER COLUMN CleanDate DATE
-
-ALTER TABLE ActivityStaging
 DROP COLUMN Date
 
 ALTER TABLE SleepStaging
@@ -118,9 +115,6 @@ UPDATE SleepStaging
 SET CleanDate = CONVERT(varchar(10), Date,1)
 
 ALTER TABLE SleepStaging
-ALTER COLUMN CleanDate DATE
-
-ALTER TABLE SleepStaging
 DROP COLUMN Date
 
 ALTER TABLE HeartRateStaging
@@ -128,9 +122,6 @@ ADD CleanDate varchar(10)
 
 UPDATE HeartRateStaging
 SET CleanDate = CONVERT(varchar(10), Date,1)
-
-ALTER TABLE HeartRateStaging
-ALTER COLUMN CleanDate DATE
 
 ALTER TABLE HeartRateStaging
 DROP COLUMN Date
