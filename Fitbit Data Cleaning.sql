@@ -55,7 +55,7 @@ FROM CTE
 -- create remaining staging tables
 SELECT *
 INTO ActivityStaging
-FROM Activity
+FROM Activity;
 
 SELECT *
 INTO HeartRateStaging
